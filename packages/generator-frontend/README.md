@@ -1,4 +1,4 @@
-# @pixel2html/generator-frontend
+# @beneliflo/generator-frontend
 
 [![Build Status](https://travis-ci.org/Pixel2HTML/pixel2html-generator.svg?branch=master)](https://travis-ci.org/Pixel2HTML/pixel2html-generator)
 
@@ -14,7 +14,7 @@ You will need `node` installed in your machine. In case you don't have it (you c
 
 We also need to install **Yeoman**, and the **Pixel2HTML Generator**, so run this command in your terminal. The `-g` parameter is to install them globally so can use it in every project.
 ```shell
-$ npm install -g yo @pixel2html/generator-frontend
+$ npm install -g yo @beneliflo/generator-frontend
 ```
 
 ## Running the generator
