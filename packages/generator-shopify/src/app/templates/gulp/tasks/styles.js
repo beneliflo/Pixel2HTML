@@ -31,7 +31,6 @@ gulp.task('main:styles', () =>
     .pipe(when(!production, $.sourcemaps.write('.', {
       sourceMappingURL: config.makeLiquidSourceMappingURL
     })))
-    .pipe(when(production, $.cssnano()))
     .pipe($.rename(config.appendLiquidExt)) // main.css.liquid
     .pipe(gulp.dest(destination))
 )
@@ -50,7 +49,6 @@ gulp.task('vendor:styles', () =>
     .pipe(when(!production, $.sourcemaps.write('.', {
       sourceMappingURL: config.makeLiquidSourceMappingURL
     })))
-    .pipe(when(production, $.cssnano()))
     .pipe($.rename(config.appendLiquidExt)) // vendor.css.liquid
     .pipe(gulp.dest(destination))
 )
